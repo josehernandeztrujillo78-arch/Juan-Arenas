@@ -569,6 +569,7 @@ footer:hover {
   position: relative;
   background: url('images/comercio.jpg') no-repeat center center fixed; /* Imagen de fondo */
   background-size: cover;
+  background-attachment: scroll; /* fijo solo en desktop */
   color: #fff;
   padding: 80px 0;
   overflow: hidden;
@@ -646,4 +647,11 @@ footer:hover {
 /* ===================== EFECTO PARALLAX AL SCROLL ===================== */
 #habilidades-blandas {
   background-attachment: fixed; /* Hace el efecto parallax básico */
+}
+
+
+@media (min-width: 769px) {
+  #habilidades-blandas {
+    background-attachment: fixed;
+  }
 }
